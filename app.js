@@ -17,8 +17,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-console.log(mongoURI);
-
 mongoose
   .connect(mongoURI)
   .then(() => console.log(`Database connected at ${mongoURI}`))
