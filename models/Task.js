@@ -19,7 +19,6 @@ const taskSchema = new mongoose.Schema(
     // Reference to a User (optional)
     user: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "User", // Reference to the User collection
       required: false, // Task may not belong to any user
     },
   },
